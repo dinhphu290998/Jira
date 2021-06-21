@@ -1,0 +1,393 @@
+<body id="jira" class="aui-layout aui-theme-default page-type-login  " data-version="8.5.1" data-aui-version="8.5.0">
+  <div id="page">
+      
+          <header id="header" role="banner">
+              
+
+
+
+
+
+
+<script>
+require(["jquery", "jira/license-banner"], function ($, licenseBanner) {
+  $(function () {
+      licenseBanner.showLicenseBanner("");
+      licenseBanner.showLicenseFlag("");
+  });
+});
+</script>
+
+
+
+              
+
+
+
+
+              
+
+
+
+
+<nav class="aui-header aui-dropdown2-trigger-group" role="navigation" resolved="" data-aui-responsive="true"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger="" href="#app-switcher" resolved="" aria-expanded="false"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default aui-layer" role="menu" aria-hidden="true" data-is-switcher="true" data-environment="{&quot;isUserAdmin&quot;:false,&quot;isAppSuggestionAvailable&quot;:false,&quot;isSiteAdminUser&quot;:false}" resolved=""><div class="aui-dropdown2-section"><ul class="nav-links"><li class="nav-link nav-link-local"><a href="http://jira.icheck.com.vn/secure/MyJiraHome.jspa" class="aui-dropdown2-radio aui-dropdown2-checked checked" title="http://jira.icheck.com.vn/secure/MyJiraHome.jspa" resolved="" aria-checked="true" tabindex="0" role="radio"><span class="nav-link-label">Jira Software</span></a></li><li class="nav-link"><a href="http://tech-hub.icheck.vn/" class="aui-dropdown2-radio " title="http://tech-hub.icheck.vn/" resolved="" aria-checked="false" tabindex="0" role="radio"><span class="nav-link-label">Confluence</span></a></li></ul></div></div></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="http://jira.icheck.com.vn/secure/MyJiraHome.jspa"><img src="http://jira.icheck.com.vn/s/1xdom0/805001/6411e0087192541a09d88223fb51a6a0/_/images/jira-software.png" alt="iCheck Project Management" data-aui-responsive-header-index="0"></a></h1><ul class="aui-nav" style="width: auto;"><li><a href="http://jira.icheck.com.vn/secure/Dashboard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="home_link" aria-haspopup="true" aria-controls="home_link-content" title="View and manage your dashboards" accesskey="d" resolved="" aria-expanded="false">Dashboards</a><div class="aui-dropdown2 aui-style-default aui-layer" id="home_link-content" data-aui-dropdown2-ajax-key="home_link" resolved="" aria-hidden="true"></div></li>
+</ul></div><div class="aui-header-secondary"><ul class="aui-nav">
+<li id="quicksearch-menu">
+  <form action="http://jira.icheck.com.vn/secure/QuickSearch.jspa" method="get" id="quicksearch" class="aui-quicksearch dont-default-focus ajs-dirty-warning-exempt">
+      <input id="quickSearchInput" autocomplete="off" class="search" type="text" title="Search ( Type '/' )" placeholder="Search" name="searchString" accesskey="q"><div class="quick-search-spinner"></div>
+      <input type="submit" class="hidden" value="Search">
+  </form>
+</li>
+<li><a class="jira-feedback-plugin" role="button" aria-haspopup="true" id="jira-header-feedback-link" href="#"><span class="aui-icon aui-icon-small aui-iconfont-feedback">Give feedback to Atlassian</span></a></li>
+
+
+
+  <li id="system-help-menu">
+      <a class="aui-nav-link aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" id="help_menu" aria-haspopup="true" href="https://docs.atlassian.com/jira/jcore-docs-085/" target="$textUtils.htmlEncode($rootHelpMenuItem.params.target)" title="Help" resolved="" aria-controls="system-help-menu-content" aria-expanded="false"><span class="aui-icon aui-icon-small aui-iconfont-question-filled">Help</span></a>
+      <div id="system-help-menu-content" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+                          <div class="aui-dropdown2-section">
+                                                              <ul id="jira-help" class="aui-list-truncate">
+                                                          <li>
+                                  <a id="view_core_help" class="aui-nav-link " title="Go to the online documentation for Jira Core" href="https://docs.atlassian.com/jira/jcore-docs-085/" target="_blank">Jira Core help</a>
+                              </li>
+                                                          <li>
+                                  <a id="keyshortscuthelp" class="aui-nav-link " title="Get more information about Jira's Keyboard Shortcuts ( Type '?' )" href="http://jira.icheck.com.vn/secure/ViewKeyboardShortcuts!default.jspa" target="_blank">Keyboard Shortcuts</a>
+                              </li>
+                                                          <li>
+                                  <a id="view_about" class="aui-nav-link " title="Get more information about Jira" href="http://jira.icheck.com.vn/secure/AboutPage.jspa">About Jira</a>
+                              </li>
+                                                          <li>
+                                  <a id="view_credits" class="aui-nav-link " title="See who did what" href="http://jira.icheck.com.vn/secure/credits/AroundTheWorld!default.jspa" target="_blank">Jira Credits</a>
+                              </li>
+                                                  </ul>
+                                  </div>
+                  </div>
+  </li>
+
+
+
+
+
+
+
+
+
+<li id="user-options">
+          <a class="aui-nav-link login-link" href="http://jira.icheck.com.vn/login.jsp?os_destination=%2Fprojects%2FIOSSO2020%2Fissues%2FIOSSO2020-18%3Ffilter%3Dallopenissues">Log In</a>
+              <div id="user-options-content" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+                          <div class="aui-dropdown2-section">
+                                                      </div>
+                  </div>
+  </li>
+</ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+          </header>
+      
+      
+
+
+
+      <section id="content" role="main">
+          <div class="aui-page-panel"><div class="aui-page-panel-inner">
+                  <section class="aui-page-panel-content">
+                          
+  
+      <header class="aui-page-header"><div class="aui-page-header-inner"><div class="aui-page-header-main">
+              
+                  <h1>Welcome to iCheck Project Management</h1>
+              
+          </div></div></header>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="" class="aui" id="login-form" >
+  <div class="form-body">
+      
+      
+      
+      
+      
+  
+  
+  
+  
+  
+
+  
+      
+              
+              
+      
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<div *ngIf="!errorValue" class="aui-message aui-message-warning">
+    <p>You must log in to access this page.</p>
+    <p>
+        If you think this message is wrong, please contact your Jira administrators.
+    </p>
+</div>
+
+
+
+<div *ngIf="errorValue" class="aui-message aui-message-error">
+  <p>
+      Sorry, your username and password are incorrect - please try again.
+  </p>
+</div>
+
+
+
+
+  
+
+  
+  <div class="aui-group jira-login-method">
+      <div class="aui-item jira-login-item">
+      
+              
+
+
+
+
+<div class="field-group">
+  
+                  <label accesskey="u" for="login-form-username"><u>U</u>sername</label>
+                  <input class="text medium-field" id="login-form-username" name="os_username" type="text" [(ngModel)]="username">
+              
+  
+</div>
+
+              
+
+
+
+
+<div class="field-group">
+  
+                  <label accesskey="p" for="login-form-password" id="passwordlabel"><u>P</u>assword</label>
+                  <input id="login-form-password" class="text medium-field" name="os_password" type="password" [(ngModel)]="password">
+              
+  
+</div>
+
+              
+              
+                  
+
+
+
+
+<fieldset class="group ">
+  
+  
+                      
+                      
+
+
+
+
+<div class="checkbox" resolved="">
+  
+                          
+                          <input class="checkbox" id="login-form-remember-me" name="os_cookie" type="checkbox" value="true" resolved="" checked="on"><span class="aui-form-glyph"></span>
+                          <label for="login-form-remember-me" accesskey="r"><u>R</u>emember my login on this computer</label>
+                      
+  
+</div>
+                  
+</fieldset> <!-- // .group -->
+              
+              
+          
+
+      
+      
+          <div id="sign-up-hint" class="field-group">
+              
+              Not a member? To request an account, please contact your Jira administrators.
+              
+          </div>
+      
+      </div>
+  </div>
+  
+
+
+<div class="hidden">
+  <input name="os_destination" type="hidden" value="/projects/IOSSO2020/issues/IOSSO2020-18?filter=allopenissues">
+</div>
+
+  
+  
+
+
+<div class="hidden">
+  <input name="user_role" type="hidden">
+</div>
+
+
+      
+      
+
+
+<div class="hidden">
+  <input name="atl_token" type="hidden">
+</div>
+
+  </div>
+  
+  <div class="buttons-container form-footer">
+      <div class="buttons">
+          
+              
+
+
+
+
+<button  accesskey="s" class="aui-button aui-button-primary" id="login-form-submit" name="login" style="width: 65px;" (click)="login()">
+  Log In
+</button>
+          
+          
+              
+
+
+<a accesskey="`" class="aui-button aui-button-link cancel" href="http://jira.icheck.com.vn/secure/ForgotLoginDetails.jspa" id="login-form-cancel" title="Press Ctrl+Alt+` to cancel" resolved="">Can't access your account?</a>
+          
+      </div>
+      
+  </div>
+  
+</form> <!-- // .aui #login-form -->
+
+
+
+
+                      </section><!-- .aui-page-panel-content -->
+              </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+      </section>
+      
+          <footer id="footer" role="contentinfo">
+              
+              
+
+<section class="footer-body">
+<ul class="atlassian-footer">
+  <li>
+      Atlassian Jira <a class="seo-link" rel="nofollow" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+                                          <span id="footer-build-information">(v8.5.1#805001-<span title="c5b54a7317f297e17ddad5bb52a1850cf2bdb4bc" data-commit-id="c5b54a7317f297e17ddad5bb52a1850cf2bdb4bc}">sha1:c5b54a7</span>)</span>
+  </li>
+  <li>
+      <a id="about-link" rel="nofollow" href="http://jira.icheck.com.vn/secure/AboutPage.jspa/secure/AboutPage.jspa">About Jira</a>
+  </li>
+  <li>
+      <a id="footer-report-problem-link" rel="nofollow" href="http://jira.icheck.com.vn/secure/CreateIssue!default.jspa">Report a problem</a>
+  </li>
+</ul>
+  <p class="atlassian-footer">
+      <span class="licensemessage">
+          
+      </span>
+  </p>
+
+  <div id="footer-logo"><a rel="nofollow" href="http://www.atlassian.com/">Atlassian</a></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+  <input type="hidden" title="loggedInUser" value="">
+  <input type="hidden" title="ajaxTimeout" value="The call to the Jira server did not complete within the timeout period.  We are unsure of the result of this operation.">
+  <input type="hidden" title="JiraVersion" value="8.5.1">
+  <input type="hidden" title="ajaxUnauthorised" value="You are not authorised to perform this operation. Please log in.">
+  <input type="hidden" title="baseURL" value="http://jira.icheck.com.vn">
+  <input type="hidden" title="ajaxCommsError" value="The Jira server could not be contacted. This may be a temporary glitch or the server may be down. ">
+  <input type="hidden" title="ajaxServerError" value="The Jira server was contacted but has returned an error response. We are unsure of the result of this operation.">
+  <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+  <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+  <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+  <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+  <input type="hidden" title="keyType" value="Type">
+  <input type="hidden" title="keyThen" value="then">
+  <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+  <input type="hidden" title="actions" value="Actions">
+  <input type="hidden" title="removeItem" value="Remove">
+  <input type="hidden" title="workflow" value="Workflow">
+  <input type="hidden" title="labelNew" value="New Label">
+  <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+  <input type="hidden" title="closelink" value="Close">
+  <input type="hidden" title="dotOperations" value="Operations">
+  <input type="hidden" title="dotLoading" value="Loading...">
+  <input type="hidden" title="frotherSuggestions" value="Suggestions">
+  <input type="hidden" title="frotherNomatches" value="No Matches">
+  <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+  <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+  <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+          </footer>
+      
+  </div>
+  
+
+<script type="text/javascript" src="http://jira.icheck.com.vn/s/d41d8cd98f00b204e9800998ecf8427e-CDN/1xdom0/805001/6411e0087192541a09d88223fb51a6a0/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js" data-wrm-key="jira.webresources:bigpipe-js" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="http://jira.icheck.com.vn/s/d41d8cd98f00b204e9800998ecf8427e-CDN/1xdom0/805001/6411e0087192541a09d88223fb51a6a0/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js" data-wrm-key="jira.webresources:bigpipe-init" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+
+
+
+
+<div class="aui-popup aui-dialog" id="bbb-gp-clone-info-dialog__dialog" style="margin-top: -260px; margin-left: -350px; width: 700px; height: 520px; z-index: 3002; display: none;"><div class="dialog-components" style="display: none;"><ul class="dialog-page-menu" style="height: 520px;"></ul><div class="dialog-page-body"></div></div><div class="dialog-components"><h2 class="dialog-title">Git Repository Connection Information</h2><ul class="dialog-page-menu" style="height: 406px; display: none;"><li class="page-menu-item selected"><button class="item-button"></button></li></ul><div class="dialog-page-body"><div class="dialog-panel-body" style="height: 406px;"><div id="bbb-gp-cloneinfodialog__progress-indicator" class="aui-progress-indicator"><span class="aui-progress-indicator-value"></span></div></div></div><div class="dialog-button-panel"><a href="#" class="button-panel-link #">Close</a></div></div></div></body>

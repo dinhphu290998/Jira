@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "jira-crawling"
+  },
+  "targets": {
+    "jira-crawling": {
+      "hosting": {
+        "Jira": [
+          "jira-crawling"
+        ]
+      }
+    }
+  }
+}
