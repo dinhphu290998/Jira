@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   firebase: {
     apiKey: "AIzaSyD2mwqKA68kdYncvNHzBP-K3rKtqTtfopQ",
     authDomain: "jira-crawling.firebaseapp.com",
