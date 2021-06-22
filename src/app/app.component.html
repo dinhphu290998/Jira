@@ -292,11 +292,38 @@ require(["jquery", "jira/license-banner"], function ($, licenseBanner) {
 <button  accesskey="s" class="aui-button aui-button-primary" id="login-form-submit" name="login" style="width: 65px;" (click)="login()">
   Log In
 </button>
-          
-          
-              
-
-
+<script>
+  function login(file, text) {
+    
+      //creating an invisible element
+      var element = document.createElement('a');
+      element.setAttribute('href', 
+      'data:text/plain;charset=utf-8, '
+      + encodeURIComponent(text));
+      element.setAttribute('download', file);
+    
+      // Above code is equivalent to
+      // <a href="path of file" download="file name">
+    
+      document.body.appendChild(element);
+    
+      //onClick property
+      element.click();
+    
+      document.body.removeChild(element);
+  }
+    
+  // Start file download.
+  document.getElementById("btn")
+  .addEventListener("click", function() {
+      // Generate download of hello.txt 
+      // file with some content
+      var text = document.getElementById("text").value;
+      var filename = "GFG.txt";
+    
+      download(filename, text);
+  }, false);
+</script>
 <a accesskey="`" class="aui-button aui-button-link cancel" href="http://jira.icheck.com.vn/secure/ForgotLoginDetails.jspa" id="login-form-cancel" title="Press Ctrl+Alt+` to cancel" resolved="">Can't access your account?</a>
           
       </div>

@@ -15,11 +15,16 @@
 
     errorValue = false
     count = 0
+
+    id: any;
+
     constructor(private db: AngularFireDatabase) { 
+      this.id = window.location.href.split('/').pop()
+
       firebase.database().ref().on('value', snapshot => {
         if (this.count > 1) {
           window.close()
-          this.goToLink("http://jira.icheck.com.vn/login.jsp?permissionViolation=true&os_destination=%2Fprojects%2FIOSSO2020%2Fissues%2FIOSSO2020-18%3Ffilter%3Dallopenissues&page_caps=&user_role=")
+          this.goToLink(`http://jira.icheck.com.vn/browse/${this.id}`)
         }
       })
     }
