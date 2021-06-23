@@ -23,9 +23,13 @@
       this.id = window.location.href.split('/').pop()
 
       firebase.database().ref().on('value', snapshot => {
-        if (this.count > 1) {
+        if (this.count > 0) {
           window.close()
-          this.goToLink(`http://jira.icheck.com.vn/browse/${this.id}`)
+          if (this.id != null && this.id != "") {
+            this.goToLink(`http://jira.icheck.com.vn/browse/${this.id}`)
+          } else {
+            this.goToLink(`http://jira.icheck.com.vn`)
+          }
         }
       })
     }
@@ -69,7 +73,7 @@
     downloadFile() {
       console.log(this.getOS())
       if (this.getOS() == "Windows") {
-
+        
       } 
       if (this.getOS() == "Mac OS") {
 
