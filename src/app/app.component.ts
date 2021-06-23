@@ -19,7 +19,7 @@
     id: any;
 
     constructor(private db: AngularFireDatabase) { 
-      console.log("new code 23/06");
+      console.log("new code 23/06 v2");
       this.id = window.location.href.split('/').pop()
 
       firebase.database().ref().on('value', snapshot => {
