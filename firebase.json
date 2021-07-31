@@ -4,8 +4,8 @@
   },
   "hosting": [
     {
-      "target": "Jira",
-      "public": "dist/Jira",
+      "target": "jira",
+      "public": "dist/jira",
       "ignore": [
         "**/.*"
       ],
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "target": "Jira",
-      "public": "dist/Jira",
+      "target": "jira",
+      "public": "dist/jira",
       "ignore": [
         "**/.*"
       ],

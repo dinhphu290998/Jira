@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "jira-crawling"
+    "default": "jira"
   },
   "targets": {
-    "jira-crawling": {
+    "jira": {
       "hosting": {
         "Jira": [
-          "jira-crawling"
+          "jira"
         ]
       }
     }
